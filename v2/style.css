@@ -43,11 +43,9 @@ ul { list-style: none; }
 .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); }
 
 /* SECTION HEADER */
-.section-header { margin-bottom: 52px; }
-.section-header.center { text-align: center; }
+.section-header { margin-bottom: 52px; text-align: center; }
 .section-header h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; color: var(--navy); line-height: 1.18; margin-top: 10px; }
-.section-header p.desc { margin-top: 14px; color: var(--gray); font-size: 16px; max-width: 600px; }
-.section-header.center p.desc { margin-left: auto; margin-right: auto; }
+.section-header p.desc { margin-top: 14px; color: var(--gray); font-size: 16px; max-width: 600px; margin-left: auto; margin-right: auto; }
 .section-header.light h2 { color: #fff; }
 .section-header.light .eyebrow { color: var(--accent2); }
 .section-header.light p.desc { color: rgba(255,255,255,.72); }
