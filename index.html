@@ -3,415 +3,369 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Survival Systems India – HUET Training</title>
+  <title>Survival Systems India – Leading Sea Survival & HUET Training</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-ssi">SSI</span>
-        <span class="logo-text">Survival Systems India</span>
-      </a>
-      <ul class="nav-links">
-        <li class="has-dropdown">
-          <a href="#">ABOUT <span class="caret">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="#about">Who We Are</a></li>
-            <li><a href="#certifications">Certification</a></li>
-            <li><a href="#noteworthy">Noteworthy</a></li>
-          </ul>
-        </li>
-        <li><a href="#training">TRAINING MODULES</a></li>
-        <li><a href="#turnkey">TURNKEY SOLUTIONS</a></li>
-        <li class="has-dropdown">
-          <a href="#">TRAINING CENTERS <span class="caret">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="#goa">Goa</a></li>
-            <li><a href="#goregaon">Goregaon</a></li>
-            <li><a href="#kochi">Kochi</a></li>
-          </ul>
-        </li>
-        <li><a href="#customers">CUSTOMERS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6582b7694467f564df90b9f3_SSI%20Logo-1.png" alt="Survival Systems India" />
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item has-dropdown">
+        <a href="about.html" class="nav-link">ABOUT <span class="caret">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html#who-we-are">Who We Are</a></li>
+          <li><a href="about.html#certification">Certification</a></li>
+          <li><a href="about.html#noteworthy">Noteworthy</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="training-modules.html" class="nav-link">TRAINING MODULES</a></li>
+      <li class="nav-item"><a href="turnkey-solutions.html" class="nav-link">TURNKEY SOLUTIONS</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">TRAINING CENTERS <span class="caret">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="training-centers/goa.html">Goa</a></li>
+          <li><a href="training-centers/goregaon.html">Goregaon</a></li>
+          <li><a href="training-centers/kochi.html">Kochi</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="customers.html" class="nav-link">CUSTOMERS</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+      <li><a href="contact.html" class="nav-cta">BOOK A COURSE</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-img"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">OPITO Approved · India's Leading HUET Operator</span>
+    <h1 class="hero-h1">Our training DNA has inbuilt<br><span class="accent">360-degree safety.</span></h1>
+    <p class="hero-sub">Underwater exercises maintain a <strong>1:1 Instructor-Delegate Ratio</strong>, featuring Seatbelt Safety Release, HUET Divers, and Airgap protocols. Additionally, a <strong>5-Tier Medical Emergency Response Planning (MERP)</strong> system is in place.</p>
+    <div class="hero-ctas">
+      <a href="training-modules.html" class="btn btn-orange">Explore Courses</a>
+      <a href="about.html" class="btn btn-outline-white">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-bar">
+  <div class="stats-inner container">
+    <div class="stat">
+      <div class="stat-num"><span data-count="138000" data-suffix="+">1,38,000</span><sup>+</sup></div>
+      <div class="stat-label">Hours Trained</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="400" data-suffix="+">400</span><sup>+</sup></div>
+      <div class="stat-label">Lives Saved</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="35000" data-suffix="+">35,000</span><sup>+</sup></div>
+      <div class="stat-label">Passengers Trained</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="750" data-suffix="+">750</span><sup>+</sup></div>
+      <div class="stat-label">Pilots Trained</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip section">
+  <div class="container about-strip-grid">
+    <div class="about-strip-text fade-in">
+      <p class="eyebrow">Who We Are</p>
+      <h2>SSI: Excellence in safety training since 2004.</h2>
+      <p>Survival Systems India (SSI) is a key survival training provider in India, established in March 2004 following a 2003 helicopter crash at Bombay High. We operate <strong>three 16-seater HUET Simulators</strong> across India.</p>
+      <p>With a client base of <strong>386+ companies</strong> across Oil &amp; Gas, Marine, Aviation, and Naval sectors, SSI has recently been recognised as <strong>"Industry Champions"</strong> by OPITO among 230+ approved training centres globally.</p>
+      <a href="about.html" class="btn btn-orange" style="margin-top:10px">About SSI →</a>
+    </div>
+    <div class="about-imgs fade-in">
+      <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/657be168e315cd74a2834b06_about-left%20img.png" alt="SSI Training" />
+      <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/657be165d13dd32edc286e6a_about%20-%20right%20img.png" alt="SSI Facility" />
+    </div>
+  </div>
+</section>
+
+<!-- NOTEWORTHY -->
+<section class="noteworthy section">
+  <div class="container">
+    <div class="section-header light center fade-in">
+      <p class="eyebrow">Noteworthy Projects</p>
+      <h2>ONGC backed sea survival training centre<br>in Goa inaugurated by PM Modi</h2>
+    </div>
+    <div class="carousel-wrap fade-in">
+      <div id="carouselTrack" class="carousel-track">
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/6576f6c4fa5c1d59c4a93284_Mask%20group.png" alt="Goa facility" />
+          <p class="slide-caption">Advanced Marine Aviation and Sea Survival Training (A-MAST) — Goa</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/658e72ee2d3f45a22e2ca448_Mask%20group-5.png" alt="Goa facility interior" />
+          <p class="slide-caption">State-of-the-art HUET simulator pool</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/6576f6c5bd70384c96717311_Mask%20group-4.png" alt="Goa facility" />
+          <p class="slide-caption">Training facility lobby and reception</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/6576f6c49cc41ceb440e7acc_Mask%20group-3.png" alt="Goa facility" />
+          <p class="slide-caption">Foundation ceremony — Goa centre</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/6576f6c5c89784ec37d28456_Mask%20group-2.png" alt="Goa facility" />
+          <p class="slide-caption">Inauguration by Prime Minister of India, February 5, 2024</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/6576f6c50295fc5759bd50c2_Mask%20group-1.png" alt="Goa facility night" />
+          <p class="slide-caption">Night view of the Goa training centre</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn">&#8592;</button>
+      <button class="carousel-btn" id="nextBtn">&#8594;</button>
+    </div>
+    <div class="carousel-dots">
+      <div class="carousel-dot active"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING MODULES -->
+<section class="training-bg section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <p class="eyebrow">OPITO Approved</p>
+      <h2>Training Modules</h2>
+      <p class="desc">All courses are internationally recognised and OPITO approved, ensuring compliance with the highest offshore safety standards.</p>
+    </div>
+    <div class="courses-grid">
+
+      <div class="course-card fade-in">
+        <span class="course-tag">H₂S</span>
+        <h3>Basic H₂S Training</h3>
+        <p>Ensure that the Learner gains the required knowledge and understanding of hydrogen sulphide hazards and emergency response procedures in offshore environments.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 2 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> ½ Day
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+      <div class="course-card fade-in">
+        <span class="course-tag">T-BOSIET</span>
+        <h3>T-BOSIET DD</h3>
+        <p>Introduce Learners to the specific safety issues and regimes relevant to offshore installations in tropical environments — Dedicated Delivery.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 4 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> 1 Day
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+      <div class="course-card fade-in">
+        <span class="course-tag">BOSIET+EBS</span>
+        <h3>BOSIET with EBS DD</h3>
+        <p>Introduce Learners to the specific safety issues and regimes relevant to offshore installations including Emergency Breathing System — Dedicated Delivery.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 4 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> 1 Day
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+      <div class="course-card fade-in">
+        <span class="course-tag">T-HUET</span>
+        <h3>T-HUET</h3>
+        <p>Prepare Learners that intend to travel to and from offshore oil and gas installations by helicopter in tropical environments to escape safely from a ditched helicopter.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 4 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> 1 Day
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+      <div class="course-card fade-in">
+        <span class="course-tag">BOSIET</span>
+        <h3>BOSIET with EBS</h3>
+        <p>Comprehensive offshore safety induction and emergency training with Emergency Breathing System proficiency over a full 3-day programme.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 4 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> 3 Days
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+      <div class="course-card fade-in">
+        <span class="course-tag">FOET</span>
+        <h3>FOET with EBS</h3>
+        <p>Provide Learners with the opportunity to practice and demonstrate emergency response procedures — refresher for offshore personnel.</p>
+        <div class="course-meta">
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9e3c9c62425f43208_Clock.svg" alt="Validity" /> 4 Yr Validity
+          </span>
+          <span class="course-meta-item">
+            <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b946995ef83f62f697_Calendar.svg" alt="Duration" /> 1 Day
+          </span>
+        </div>
+        <a href="training-modules.html" class="course-cta">Learn More <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="training-modules.html" class="btn btn-outline-navy">View All Courses →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <p class="eyebrow">Our Locations</p>
+      <h2>World-class sea survival training facilities</h2>
+    </div>
+    <div class="facilities-grid">
+
+      <div class="facility-card fade-in">
+        <div class="facility-thumb">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/665065547c14c1bff15d7193_1DSC01086.png" alt="Goa Training Centre" />
+          <span class="facility-badge">Goa</span>
+        </div>
+        <div class="facility-body">
+          <h3>Advanced Marine Aviation &amp; Sea Survival Training (A-MAST)</h3>
+          <p>ONGC's Sea Survival Centre in Goa offers state-of-the-art HUET simulator, inaugurated by PM Modi on February 5, 2024. The facility is now open for bookings.</p>
+          <a href="training-centers/goa.html" class="course-cta">Explore Facility <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+        </div>
+      </div>
+
+      <div class="facility-card fade-in">
+        <div class="facility-thumb">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/659b99cd163194ea5f93dcdf_Goregaon%20card%20img1.png" alt="Goregaon Training Centre" />
+          <span class="facility-badge">Goregaon, Mumbai</span>
+        </div>
+        <div class="facility-body">
+          <h3>Goregaon Training Centre</h3>
+          <p>Established in 2004, our centre in Mumbai features a 16-seater HUET Simulator which simulates real-life ditching scenarios with authentic controls and consoles.</p>
+          <a href="training-centers/goregaon.html" class="course-cta">Explore Facility <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+        </div>
+      </div>
+
+      <div class="facility-card fade-in">
+        <div class="facility-thumb">
+          <img src="https://cdn.prod.website-files.com/655dd2136e6ec4705a905912/659b9a4a0e31c608e6c1fc78_Kochi%20card%20img1.png" alt="Kochi Training Centre" />
+          <span class="facility-badge">Kochi</span>
+        </div>
+        <div class="facility-body">
+          <h3>Kochi — INS Garuda</h3>
+          <p>Established in August 2013 at INS Garuda, Kochi, the facility provides 12 simulators encompassing HUET, CUET, PDDT, and environmental conditions.</p>
+          <a href="training-centers/kochi.html" class="course-cta">Explore Facility <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6571a6b9a3b2b5f37391e17b_Arrow%20Right.svg" alt="→" /></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta">
+  <div class="container">
+    <h2>Get in touch.</h2>
+    <p>Your safety training journey begins with a simple contact to SSI.</p>
+    <a href="contact.html" class="btn btn-outline-white">Book a Course</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="https://cdn.prod.website-files.com/655dd2126e6ec4705a90588a/6582b7694467f564df90b9f3_SSI%20Logo-1.png" alt="SSI Logo" />
+      <p>India's leading sea survival and HUET training organisation. OPITO approved. Safety first, always.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="turnkey-solutions.html">Turnkey Solution</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn-book">Book a Course</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">OPITO APPROVED · INDIA'S LEADING HUET OPERATOR</p>
-      <h1 class="hero-headline">Our training DNA has inbuilt<br><span class="accent">360-degree safety.</span></h1>
-      <p class="hero-sub">Underwater exercises maintain a <strong>1:1 Instructor-Delegate Ratio</strong>, featuring Seatbelt Safety Release, HUET Divers, and Airgap protocols. Additionally, a <strong>5-Tier Medical Emergency Response Planning (MERP)</strong> system is in place.</p>
-      <div class="hero-ctas">
-        <a href="#training" class="btn-primary">Explore Courses</a>
-        <a href="#about" class="btn-secondary">Learn More</a>
-      </div>
+    <div class="footer-col">
+      <h4>Training Modules</h4>
+      <ul>
+        <li><a href="training-modules.html">BOSIET with EBS</a></li>
+        <li><a href="training-modules.html">BOSIET with EBS DD</a></li>
+        <li><a href="training-modules.html">Basic H₂S Training</a></li>
+        <li><a href="training-modules.html">EBS</a></li>
+        <li><a href="training-modules.html">FOET with EBS</a></li>
+        <li><a href="training-modules.html">HUET with EBS</a></li>
+        <li><a href="training-modules.html">T-BOSIET</a></li>
+        <li><a href="training-modules.html">T-BOSIET DD</a></li>
+        <li><a href="training-modules.html">T-FOET</a></li>
+        <li><a href="training-modules.html">T-HUET</a></li>
+      </ul>
     </div>
-    <div class="hero-scroll-hint">
-      <span></span>
+    <div class="footer-col">
+      <h4>Facilities</h4>
+      <ul>
+        <li><a href="training-centers/goa.html">Goa</a></li>
+        <li><a href="training-centers/goregaon.html">Goregaon</a></li>
+        <li><a href="training-centers/kochi.html">Kochi</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright &copy; bulkMRO | Powered by Webflow</p>
+  </div>
+</footer>
 
-  <!-- STATS -->
-  <section class="stats" id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number">1,38,000<sup>+</sup></span>
-          <span class="stat-label">Training Hours</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">400<sup>+</sup></span>
-          <span class="stat-label">Lives Saved</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">35,000<sup>+</sup></span>
-          <span class="stat-label">Passengers Trained</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">750<sup>+</sup></span>
-          <span class="stat-label">Pilots Trained</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container about-grid">
-      <div class="about-text">
-        <p class="section-eyebrow">WHO WE ARE</p>
-        <h2>India's <span class="accent">Premier</span> Sea Survival Training Institution</h2>
-        <p>Survival Systems India (SSI) is the country's leading HUET (Helicopter Underwater Escape Training) operator, operating <strong>three 16-seater HUET Simulators</strong> across multiple locations in India.</p>
-        <p>We go beyond regulatory requirements — our tailored, scenario-based practical training programs are designed specifically for energy sector workers, offshore personnel, and aviation crews. With India's most advanced facilities and an uncompromising safety culture, SSI sets the gold standard for sea survival training.</p>
-        <a href="#training" class="btn-primary">Our Training Modules →</a>
-      </div>
-      <div class="about-visual">
-        <div class="about-img-wrap">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="HUET Training facility" />
-          <div class="about-badge">
-            <span class="badge-num">20<sup>+</sup></span>
-            <span class="badge-text">Years of Excellence</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRAINING MODULES -->
-  <section class="training section" id="training">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">OPITO APPROVED COURSES</p>
-        <h2>Training <span class="accent">Modules</span></h2>
-        <p class="section-desc">All courses are internationally recognized and OPITO approved, ensuring compliance with the highest offshore safety standards.</p>
-      </div>
-      <div class="courses-grid">
-
-        <div class="course-card">
-          <div class="course-icon">H₂S</div>
-          <h3>Basic H₂S Training</h3>
-          <p>Understand hydrogen sulphide hazards and emergency response procedures in offshore environments.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 2 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> ½ Day</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-        <div class="course-card">
-          <div class="course-icon">T-BOSIET</div>
-          <h3>T-BOSIET DD</h3>
-          <p>Tropical Basic Offshore Safety Induction and Emergency Training with Dedicated Delivery.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 4 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> 1 Day</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-        <div class="course-card">
-          <div class="course-icon">BOSIET</div>
-          <h3>BOSIET with EBS DD</h3>
-          <p>Basic Offshore Safety Induction and Emergency Training with Emergency Breathing System – Dedicated Delivery.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 4 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> 1 Day</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-        <div class="course-card">
-          <div class="course-icon">T-HUET</div>
-          <h3>T-HUET</h3>
-          <p>Tropical Helicopter Underwater Escape Training — essential for all offshore helicopter passengers.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 4 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> 1 Day</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-        <div class="course-card">
-          <div class="course-icon">BOSIET+EBS</div>
-          <h3>BOSIET with EBS</h3>
-          <p>Comprehensive offshore safety training including Emergency Breathing System proficiency over 3 days.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 4 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> 3 Days</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-        <div class="course-card">
-          <div class="course-icon">FOET</div>
-          <h3>FOET with EBS</h3>
-          <p>Further Offshore Emergency Training with Emergency Breathing System for personnel requiring refresher certification.</p>
-          <div class="course-meta">
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg> 4 Yr Validity</span>
-            <span class="meta-item"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z"/></svg> 1 Day</span>
-          </div>
-          <a href="#contact" class="course-link">Enquire Now <span>→</span></a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- NOTEWORTHY -->
-  <section class="noteworthy section" id="noteworthy">
-    <div class="container">
-      <div class="section-header light">
-        <p class="section-eyebrow">NOTEWORTHY PROJECTS</p>
-        <h2>ONGC-Backed Sea Survival Training Centre <span class="accent">in Goa</span></h2>
-        <p class="section-desc">Inaugurated by Prime Minister Modi, this state-of-the-art facility represents a milestone in India's offshore safety infrastructure.</p>
-      </div>
-      <div class="carousel" id="carousel">
-        <button class="carousel-btn prev" id="prevBtn">&#8592;</button>
-        <div class="carousel-track-wrap">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=900&q=80" alt="Facility exterior" />
-              <p class="slide-caption">Foundation ceremony – Goa facility</p>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Training pool" />
-              <p class="slide-caption">State-of-the-art training pool</p>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="Lobby" />
-              <p class="slide-caption">Modern facility lobby</p>
-            </div>
-            <div class="carousel-slide">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=80" alt="Night view" />
-              <p class="slide-caption">Night view of the Goa centre</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-btn next" id="nextBtn">&#8594;</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FACILITIES -->
-  <section class="facilities section" id="facilities">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">OUR LOCATIONS</p>
-        <h2>Training <span class="accent">Centers</span></h2>
-      </div>
-      <div class="facilities-grid">
-
-        <div class="facility-card" id="goa">
-          <div class="facility-img">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Goa facility" />
-            <span class="facility-tag">Goa</span>
-          </div>
-          <div class="facility-body">
-            <h3>Advanced Marine Aviation and Sea Survival Training (A-MAST)</h3>
-            <p>India's most advanced HUET facility, backed by ONGC, featuring a full-scale 16-seater simulator in a purpose-built centre inaugurated by the Prime Minister of India.</p>
-            <a href="#contact" class="course-link">Get Directions →</a>
-          </div>
-        </div>
-
-        <div class="facility-card" id="goregaon">
-          <div class="facility-img">
-            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80" alt="Goregaon facility" />
-            <span class="facility-tag">Goregaon, Mumbai</span>
-          </div>
-          <div class="facility-body">
-            <h3>Goregaon Training Centre</h3>
-            <p>Established in 2004, our pioneering Mumbai facility houses a 16-seater HUET Simulator and has trained thousands of offshore professionals over two decades.</p>
-            <a href="#contact" class="course-link">Get Directions →</a>
-          </div>
-        </div>
-
-        <div class="facility-card" id="kochi">
-          <div class="facility-img">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Kochi facility" />
-            <span class="facility-tag">Kochi</span>
-          </div>
-          <div class="facility-body">
-            <h3>Kochi Training Centre — INS Garuda</h3>
-            <p>Established in August 2013 at INS Garuda, the Kochi centre operates 12 simulators encompassing HUET, CUET, and PDDT training programs.</p>
-            <a href="#contact" class="course-link">Get Directions →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TURNKEY -->
-  <section class="turnkey section" id="turnkey">
-    <div class="container turnkey-grid">
-      <div class="turnkey-img">
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Turnkey facility construction" />
-      </div>
-      <div class="turnkey-text">
-        <p class="section-eyebrow">END-TO-END SERVICES</p>
-        <h2>Turnkey <span class="accent">Solutions</span></h2>
-        <p>SSI offers comprehensive turnkey solutions for planning, designing, constructing, and managing sea survival training facilities. From initial concept to operational excellence, we integrate safety standards, regulatory compliance, and operational efficiency at every stage.</p>
-        <ul class="turnkey-list">
-          <li>Facility design &amp; engineering</li>
-          <li>Equipment procurement &amp; installation</li>
-          <li>Regulatory approval &amp; OPITO accreditation</li>
-          <li>Staff training &amp; centre management</li>
-        </ul>
-        <a href="#contact" class="btn-primary">Discuss Your Project →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CUSTOMERS -->
-  <section class="customers section" id="customers">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">TRUSTED BY</p>
-        <h2>Our <span class="accent">Customers</span></h2>
-      </div>
-      <div class="logos-grid">
-        <div class="logo-item">ONGC</div>
-        <div class="logo-item">Oil India</div>
-        <div class="logo-item">GAIL</div>
-        <div class="logo-item">Cairn Energy</div>
-        <div class="logo-item">Reliance</div>
-        <div class="logo-item">Vedanta</div>
-        <div class="logo-item">Navy / Coast Guard</div>
-        <div class="logo-item">Helideck Consultants</div>
-        <div class="logo-item">GSPC</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-text">
-        <p class="section-eyebrow">GET IN TOUCH</p>
-        <h2>Book a <span class="accent">Course</span></h2>
-        <p>Ready to enrol or want to learn more about our training programs? Fill out the form and our team will get back to you within one business day.</p>
-        <div class="contact-details">
-          <div class="contact-detail-item">
-            <strong>Email</strong>
-            <a href="mailto:info@huet.in">info@huet.in</a>
-          </div>
-          <div class="contact-detail-item">
-            <strong>Website</strong>
-            <a href="https://www.huet.in" target="_blank">www.huet.in</a>
-          </div>
-        </div>
-      </div>
-      <form class="contact-form" onsubmit="handleForm(event)">
-        <div class="form-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email Address" required />
-        </div>
-        <input type="text" placeholder="Company / Organisation" />
-        <select>
-          <option value="" disabled selected>Select a Course</option>
-          <option>Basic H₂S Training</option>
-          <option>T-BOSIET DD</option>
-          <option>BOSIET with EBS DD</option>
-          <option>T-HUET</option>
-          <option>BOSIET with EBS</option>
-          <option>FOET with EBS</option>
-          <option>Turnkey Solutions Enquiry</option>
-        </select>
-        <textarea placeholder="Your Message" rows="4"></textarea>
-        <button type="submit" class="btn-primary full-width">Send Enquiry →</button>
-        <p class="form-note" id="formNote"></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo">
-          <span class="logo-ssi" style="color:#fff">SSI</span>
-          <span class="logo-text" style="color:#ccc">Survival Systems India</span>
-        </div>
-        <p>India's leading sea survival and HUET training organisation. OPITO approved. Safety first, always.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-          </a>
-          <a href="#" aria-label="Twitter/X">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016.5 3a4.5 4.5 0 00-4.5 4.5c0 .35.04.7.11 1.03A12.94 12.94 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">Who We Are</a></li>
-          <li><a href="#noteworthy">Noteworthy</a></li>
-          <li><a href="#turnkey">Turnkey Solutions</a></li>
-          <li><a href="#customers">Customers</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Training Modules</h4>
-        <ul>
-          <li><a href="#training">Basic H₂S Training</a></li>
-          <li><a href="#training">T-BOSIET DD</a></li>
-          <li><a href="#training">BOSIET with EBS DD</a></li>
-          <li><a href="#training">T-HUET</a></li>
-          <li><a href="#training">BOSIET with EBS</a></li>
-          <li><a href="#training">FOET with EBS</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Facilities</h4>
-        <ul>
-          <li><a href="#goa">Goa – A-MAST</a></li>
-          <li><a href="#goregaon">Goregaon, Mumbai</a></li>
-          <li><a href="#kochi">Kochi – INS Garuda</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Copyright &copy; 2024 Survival Systems India. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

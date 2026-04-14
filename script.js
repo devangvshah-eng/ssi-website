@@ -1,125 +1,107 @@
-// ============================================
-// SURVIVAL SYSTEMS INDIA – SCRIPTS
-// ============================================
-
-// ----- Navbar scroll effect -----
+// ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+if (navbar) {
+  const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
 
-// ----- Mobile nav toggle -----
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.querySelector('.nav-links');
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+// ===== MOBILE MENU =====
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    hamburger.textContent = navMenu.classList.contains('open') ? '✕' : '☰';
   });
-});
-
-// ----- Carousel -----
-const track = document.getElementById('carouselTrack');
-const slides = track ? track.querySelectorAll('.carousel-slide') : [];
-let currentSlide = 0;
-
-function goToSlide(index) {
-  if (slides.length === 0) return;
-  currentSlide = (index + slides.length) % slides.length;
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      hamburger.textContent = '☰';
+    });
+  });
 }
 
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+// ===== CAROUSEL =====
+function initCarousel(trackId) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
+  const slides = track.querySelectorAll('.carousel-slide');
+  let cur = 0;
+  const dots = document.querySelectorAll('.carousel-dot');
 
-// Auto-advance carousel
-setInterval(() => goToSlide(currentSlide + 1), 5000);
+  function go(i) {
+    cur = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${cur * 100}%)`;
+    dots.forEach((d, idx) => d.classList.toggle('active', idx === cur));
+  }
 
-// ----- Contact form -----
-function handleForm(e) {
-  e.preventDefault();
-  const note = document.getElementById('formNote');
-  note.textContent = 'Thank you! We will get back to you within one business day.';
-  e.target.reset();
-  setTimeout(() => { note.textContent = ''; }, 6000);
+  document.getElementById('prevBtn')?.addEventListener('click', () => go(cur - 1));
+  document.getElementById('nextBtn')?.addEventListener('click', () => go(cur + 1));
+  dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+
+  // Auto-advance
+  setInterval(() => go(cur + 1), 5000);
+  go(0);
 }
+initCarousel('carouselTrack');
 
-// ----- Animate stats on scroll -----
-function animateCounter(el, target, suffix) {
-  const duration = 1800;
-  const step = target / (duration / 16);
-  let current = 0;
-  const timer = setInterval(() => {
-    current += step;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
-    const display = target >= 1000
-      ? Math.floor(current).toLocaleString('en-IN')
-      : Math.floor(current);
-    el.setAttribute('data-display', display);
-  }, 16);
-}
+// ===== STATS COUNTER =====
+const statsSection = document.querySelector('.stats-bar') || document.querySelector('.tc-stats');
+const counters = document.querySelectorAll('[data-count]');
+let counted = false;
 
-const statsSection = document.querySelector('.stats');
-let statsAnimated = false;
-const statNumbers = document.querySelectorAll('.stat-number');
-const statTargets = [138000, 400, 35000, 750];
-
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !statsAnimated) {
-      statsAnimated = true;
-      statNumbers.forEach((el, i) => {
-        const target = statTargets[i];
-        const sup = el.querySelector('sup');
-        const supText = sup ? sup.outerHTML : '';
-        const original = el.textContent;
-        let count = 0;
-        const duration = 1800;
-        const steps = 60;
-        const increment = target / steps;
+if (statsSection && counters.length) {
+  new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !counted) {
+      counted = true;
+      counters.forEach(el => {
+        const target = parseInt(el.dataset.count.replace(/,/g, ''));
+        const suffix = el.dataset.suffix || '';
+        const isLarge = target >= 1000;
+        let start = 0;
+        const steps = 50;
+        const inc = target / steps;
         const timer = setInterval(() => {
-          count += increment;
-          if (count >= target) {
-            count = target;
-            clearInterval(timer);
-          }
-          const formatted = Math.floor(count).toLocaleString('en-IN');
-          el.innerHTML = formatted + '<sup>+</sup>';
-        }, duration / steps);
+          start += inc;
+          if (start >= target) { start = target; clearInterval(timer); }
+          const val = Math.floor(start);
+          el.textContent = isLarge ? val.toLocaleString('en-IN') : val;
+        }, 35);
       });
     }
+  }, { threshold: 0.4 }).observe(statsSection);
+}
+
+// ===== FADE IN ON SCROLL =====
+const faders = document.querySelectorAll('.fade-in');
+if (faders.length) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  faders.forEach(f => obs.observe(f));
+}
+
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
   });
-}, { threshold: 0.3 });
+});
 
-if (statsSection) statsObserver.observe(statsSection);
-
-// ----- Fade-in on scroll -----
-const fadeEls = document.querySelectorAll('.course-card, .facility-card, .stat-item, .logo-item');
-const fadeObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      fadeObserver.unobserve(entry.target);
+// ===== CONTACT FORM =====
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const msg = document.getElementById('formSuccess');
+    if (msg) {
+      msg.textContent = 'Your message has been submitted. We will get back to you within 24–48 hours.';
+      contactForm.reset();
+      setTimeout(() => msg.textContent = '', 7000);
     }
   });
-}, { threshold: 0.1 });
-
-fadeEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  fadeObserver.observe(el);
-});
+}
