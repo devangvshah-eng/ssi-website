@@ -453,13 +453,20 @@ ul { list-style: none; }
 }
 .footer-social a:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-/* Main footer grid */
+/* Main footer grid — 5 columns */
 .footer-top {
-  display: grid; grid-template-columns: 2fr 1fr 1.5fr 1fr;
-  gap: 48px; padding: 52px 28px 40px;
+  display: grid; grid-template-columns: 1.4fr 1.2fr 1.2fr 0.8fr 1fr;
+  gap: 36px; padding: 52px 28px 40px;
   max-width: 1160px; margin: 0 auto;
 }
 .footer-brand { display: none; }
+
+/* Blank heading spacer for continuation columns */
+.footer-col h4:empty, .footer-col h4.spacer {
+  border-bottom-color: transparent;
+  color: transparent;
+  pointer-events: none;
+}
 
 .footer-col h4 {
   font-size: 11px; font-weight: 700;
@@ -499,7 +506,7 @@ ul { list-style: none; }
   .courses-grid { grid-template-columns: repeat(2, 1fr); }
   .facilities-grid { grid-template-columns: repeat(2, 1fr); }
   .about-strip-grid, .about-hero-grid, .turnkey-hero-grid, .contact-grid, .tc-content-grid { grid-template-columns: 1fr; gap: 40px; }
-  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr 1fr; }
   .logos-grid { grid-template-columns: repeat(4, 1fr); }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .achievements-grid { grid-template-columns: 1fr; }
